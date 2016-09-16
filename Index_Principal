@@ -1,0 +1,103 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- 3 susodicha meta etiqueta *must* venido primero a la cabeza; cualquier otro contenido principal debe venir *after* estas etiquetas -->
+       <meta name="description" content="">
+        <meta name="author" content="Michael">
+         <link rel="icon" href="../imagen/icon.jpg">
+          <title>DataTools</title>
+           <!-- CSS principal -->
+           <link href="../css/bootstrap.min.css" rel="stylesheet">
+            <!-- IE10 los viewport cortan para la Superficie/escritorio el Windows 8 bicho -->
+            <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	         <link href="../css/boton.css" rel="stylesheet">
+          
+         <!-- Estilos de encargo para esta plantilla -->
+         <link href="../css/jumbotron.css" rel="stylesheet">
+        <script src="../js/ie-emulation-modes-warning.js"></script>
+ </head>
+
+   <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button>
+            <a class="navbar-brand" href="Principal.html">DataTools</a>
+        </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" method="post" action="../php/validar.php">
+              <div class="form-group">
+               <input type="numeric" name="documento" placeholder="Numero de documento" class="form-control" required="">
+              </div>
+              <div class="form-group">
+               <input type="password" name="clave" placeholder="Contraseña" class="form-control" required="">
+              </div>
+               <button type="submit" class="btn btn-primary">Ingresar &raquo;</button>
+              <div class="navbar-right">
+                <a class="btn btn-danger" href="registrar.html" role="button">Registrar &raquo;</a>
+              </div>
+            </form>
+          </div><!--/.navbar-colapso -->	
+      </div>
+    </nav>
+    
+<div class="social">
+    <ul>
+      <li><a href="" target="_blank" class="icon-facebook"></a></li>
+      <li><a href="" target="_blank" class="icon-twitter"></a></li>
+      <li><a href="" target="_blank" class="icon-googleplus"></a></li>
+      <li><a href="" target="_blank" class="icon-pinterest"></a></li>
+      <li><a href="" class="icon-mail"></a></li>
+    </ul>
+  </div>
+    <!-- Jumbotron principal para un mensaje de mercadotecnia primario o llamada a acción -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1><img src="../imagen/icon.jpg" class="navbar-left" width="100px"/>DataTools <img src="../imagen/icon.jpg" class="navbar-right" width="100px"/></h1>
+        <p>Este aplicativo hace mas factible el prestamo de las diferentes herramientas con las que cuenta el C.E.E.T </p><br>
+        <p><a class="btn btn-primary btn-lg" href="../html/A_Inicio.php" role="button">Mas Informacion &raquo;</a></p>
+      </div>
+    </div>  <br>  <br>
+
+
+    <div class="container">
+      <!-- Fila de ejemplo de columnas -->
+      <div class="row">
+        
+        <div class="col-xs-6">
+          <h1 style="color:white"  text-shadow="black"  style="font-family:armenian">Quienes Somos</h1>
+          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+        </div>
+        <div class="col-xs-6">
+          <h1 style="color:white"  text-shadow="black" style="font-family:armenian" >Contactenos</h1>
+          <p><a class="btn btn-default" href="Contacto.html" role="button">Ver detalles &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- /container --> <br> <br>
+
+    <hr>
+      <footer>
+        <h4 style="color:white" text-shadow="black"><p>2016 ADSI,FICHA:1024316</p></h4>
+      </footer>
+    
+    <!-- Principal JavaScript
+    ================================================== -->
+    <!-- Colocado al final de documento, entonces las páginas cargan más rápido -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 los viewport cortan para la Superficie/escritorio el Windows 8 bicho -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
